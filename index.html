@@ -1587,7 +1587,6 @@ body.present-mode #present-arrows { display:flex !important; }
       <video id="s1-video" autoplay loop muted playsinline webkit-playsinline preload="auto" disablePictureInPicture style="width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:translateX(6%);-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);">
         <source src="Assets/welcome-toto.mov" type="video/mp4">
       </video>
-      <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(31,120,255,0.45);mix-blend-mode:color;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);"></div>
       <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.5) 30%,rgba(13,27,66,0.2) 45%,transparent 60%,transparent 75%,rgba(13,27,66,0.95) 100%);pointer-events:none;"></div>
       <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 100% at 100% 50%, rgba(13,27,66,0.75) 0%, rgba(13,27,66,0.25) 45%, transparent 75%);pointer-events:none;"></div>
     </div>
@@ -2130,97 +2129,82 @@ body.present-mode #present-arrows { display:flex !important; }
 <!-- ═══════════════════════════════════════
   S-EXPERIENCES — THREE KEY EXPERIENCES FOR ARTISTS
 ═══════════════════════════════════════ -->
+<style>#s-applied 
+#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
+#s-applied .pband{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;}
+#s-applied .pseg{border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
+#s-applied .pseg.c{grid-column:span 6;background:rgba(31,206,255,0.1);color:var(--cyan);border:1px solid rgba(31,206,255,0.25);}
+#s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:var(--purp);border:1px solid rgba(204,43,251,0.3);}
+#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
+#s-applied .months{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;align-items:start;}
+#s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
+#s-applied .mlabel{font-family:monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.4);text-align:center;}
+#s-applied .mlabel.bercy{color:var(--purp);}
+#s-applied .j-card{height:94px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 11px;display:flex;flex-direction:column;}
+#s-applied .j-card.cyan{border-top-color:var(--cyan);}
+#s-applied .j-card.purp{border-top-color:var(--purp);}
+#s-applied .j-card.teal{border-top-color:#20D4B8;}
+#s-applied .j-card .nm{font-weight:800;font-size:11.5px;color:#fff;line-height:1.1;}
+#s-applied .j-card .hk{font-size:9.5px;color:rgba(255,255,255,0.5);margin-top:5px;line-height:1.28;flex:1;}
+#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;}
+#s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
+#s-applied .jleg .it{display:flex;align-items:center;gap:6px;}</style>
+<!-- ═══════════════════════════════════════
+  S-FUNNEL — ACQUISITION FUNNEL (TOTO)
+═══════════════════════════════════════ -->
 <div class="slide" id="s-applied">
-<style>
-  #s-applied .pad2{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
-  #s-applied .h2{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
-  #s-applied .sub2{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:1040px;line-height:1.65;}
-  #s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
-  #s-applied .pband{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;}
-  #s-applied .pseg{font-family:'Gilroy',sans-serif;border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
-  #s-applied .pseg.c{grid-column:span 4;background:rgba(31,206,255,0.1);color:#1FCEFF;border:1px solid rgba(31,206,255,0.25);}
-  #s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:#CC2BFB;border:1px solid rgba(204,43,251,0.3);}
-  #s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
-  #s-applied .months{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:start;}
-  #s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
-  #s-applied .mlabel{font-family:'Gilroy',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.4);text-align:center;}
-  #s-applied .mlabel.peak{color:#CC2BFB;}
-  #s-applied .jcard{height:112px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:12px 13px;display:flex;flex-direction:column;position:relative;}
-  #s-applied .jcard.cyan{border-top-color:#1FCEFF;}
-  #s-applied .jcard.purp{border-top-color:#CC2BFB;}
-  #s-applied .jcard.teal{border-top-color:#20D4B8;}
-  #s-applied .jcard .nm{font-family:'Gilroy',sans-serif;font-weight:800;font-size:13px;color:#fff;line-height:1.12;padding-right:30px;}
-  #s-applied .jcard .hk{font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.55);margin-top:6px;line-height:1.32;flex:1;}
-  #s-applied .jcard .cds{display:flex;gap:5px;align-items:center;justify-content:space-between;}
-  #s-applied .jcard .rwd{position:absolute;top:11px;right:12px;display:flex;gap:4px;align-items:center;}
-  #s-applied .jcard .coinic{width:13px;height:13px;display:inline-block;}
-  #s-applied .jcard .xp{font-family:'Gilroy',sans-serif;font-size:8px;font-weight:800;letter-spacing:0.03em;color:#fff;background:#CC2BFB;border-radius:4px;padding:1px 4px;line-height:1.4;}
-  #s-applied .jcard .ic2{width:16px;height:16px;display:inline-block;vertical-align:middle;}
-  #s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
-  #s-applied .jleg .it{display:flex;align-items:center;gap:6px;}
-  #s-applied .jleg .ic2{width:14px;height:14px;}
-  #s-applied .gt-b{background:linear-gradient(135deg,#0082FF 0%,#1FCEFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-</style>
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">07 / 10</div>
-  <div class="pad2">
+  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 14</div>
+
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:54px 80px 48px;z-index:2;">
     <div style="flex-shrink:0;">
-      <span class="tag" data-en="The CRM plan" data-fr="Le plan CRM">The CRM plan</span>
-      <div class="h2" data-i18n="html" data-en-html="The build-up to <span class='gt'>the album, and beyond.</span>" data-fr-html="La montée vers <span class='gt'>l'album, et au-delà.</span>">The build-up to <span class="gt">the album, and beyond.</span></div>
-      <p class="sub2" data-en="Here it is in action for you." data-fr="Voici notre proposition en action pour vous.">Here it is in action for you.</p>
+      <span class="tag" data-en="Acquisition" data-fr="Acquisition">Acquisition</span>
+      <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:52px;line-height:1;letter-spacing:-0.025em;color:#fff;" data-i18n="html" data-en-html="The <span class='gt-b'>acquisition funnel</span>" data-fr-html="Le <span class='gt-b'>funnel d&rsquo;acquisition</span>">
+        The <span class="gt-b">acquisition funnel</span>
+      </div>
+      <p style="margin-top:10px;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.55);max-width:1000px;" data-en="From total reachable audience to a permanent, owned fanbase, by concert night." data-fr="De l&rsquo;audience accessible totale à une fanbase permanente et possédée, au soir du concert.">From total reachable audience to a permanent, owned fanbase, by concert night.</p>
     </div>
-    <div class="jrny">
-      <div class="pband">
-        <div class="pseg c" data-en="Recruit & warm up · Jun→Sep" data-fr="Recruter & échauffer · Juin→Sep">Recruit &amp; warm up · Jun→Sep</div>
-        <div class="pseg p" data-en="Album drop · Oct" data-fr="Sortie album · Oct">Album drop · Oct</div>
-        <div class="pseg t" data-en="Beyond the drop · Nov→" data-fr="Après la sortie · Nov→">Beyond the drop · Nov→</div>
-      </div>
-      <div class="months">
-        <div class="mcol">
-          <div class="mlabel">JUN</div>
-          <div class="jcard cyan"><div class="nm">Real Fan</div><div class="hk" data-en="Fans verify their fandom to join ElGrandeToto' Fanverse" data-fr="Les fans vérifient leur fidélité pour rejoindre le Fanverse de ElGrandeToto">Fans verify their fandom to join ElGrandeToto' Fanverse</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm" data-en="Invite Friends" data-fr="Inviter des amis">Invite Friends</div><div class="hk" data-en="Fans bring friends in and earn coins for each one" data-fr="Les fans invitent leurs amis et gagnent des coins pour chacun">Fans bring friends in and earn coins for each one</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel">JUL</div>
-          <div class="jcard cyan"><div class="nm">Music</div><div class="hk" data-en="Fans stream ElGrandeToto' catalogue directly in-app" data-fr="Les fans streament le catalogue de ElGrandeToto directement dans l'app">Fans stream ElGrandeToto' catalogue directly in-app</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm" data-en="Social Share" data-fr="Partage social">Social Share</div><div class="hk" data-en="Fans share the Fanverse and tag ElGrandeToto to earn coins" data-fr="Les fans partagent le Fanverse et taguent ElGrandeToto pour gagner des coins">Fans share the Fanverse and tag ElGrandeToto to earn coins</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel">AUG</div>
-          <div class="jcard cyan"><div class="nm">Magic Quest</div><div class="hk" data-en="Fans climb a free XP lane toward exclusive beats" data-fr="Les fans grimpent une voie XP gratuite vers des beats exclusifs">Fans climb a free XP lane toward exclusive beats</div><div class="cds"><div class="rwd"><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm">Magic Lens</div><div class="hk" data-en="Fans scan ElGrandeToto releases and merch to prove their fandom" data-fr="Les fans scannent les sorties et le merch de ElGrandeToto pour prouver leur fidélité">Fans scan ElGrandeToto releases and merch to prove their fandom</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel">SEP</div>
-          <div class="jcard cyan"><div class="nm" data-en="Tickets" data-fr="Billets">Tickets</div><div class="hk" data-en="Top fans unlock the concert presale" data-fr="Les meilleurs fans débloquent la prévente du concert">Top fans unlock the concert presale</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel peak">★ OCT</div>
-          <div class="jcard purp"><div class="nm" data-en="Mystery Box" data-fr="Mystery Box">Mystery Box</div><div class="hk" data-en="Select lucky fans receive the album as a gift" data-fr="Quelques fans chanceux reçoivent l'album en cadeau">Select lucky fans receive the album as a gift</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard purp"><div class="nm" data-en="Events" data-fr="Events">Events</div><div class="hk" data-en="A launch listening session with ElGrandeToto' Fanverse" data-fr="Une session d'écoute de lancement avec le Fanverse de ElGrandeToto">A launch listening session with ElGrandeToto' Fanverse</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
-          <div class="jcard purp"><div class="nm" data-en="Collectibles" data-fr="Collectibles">Collectibles</div><div class="hk" data-en="A set of digital collectibles made for ElGrandeToto' Fanverse" data-fr="Un set de collectibles numériques pour le Fanverse de ElGrandeToto">A set of digital collectibles made for ElGrandeToto' Fanverse</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-          <div class="jcard purp"><div class="nm">Magic Unlimited</div><div class="hk" data-en="Paying fans unlock behind-the-scenes content on the album creation" data-fr="Les fans payants débloquent les coulisses de la création de l'album">Paying fans unlock behind-the-scenes content on the album creation</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel">NOV</div>
-          <div class="jcard teal"><div class="nm">Talent Faves</div><div class="hk" data-en="ElGrandeToto shares his inspirations behind the album" data-fr="ElGrandeToto partage ses inspirations derrière l'album">ElGrandeToto shares his inspirations behind the album</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard teal"><div class="nm" data-en="Store" data-fr="Store">Store</div><div class="hk" data-en="Limited edition merch dropped uniquely for Magic fans" data-fr="Merch en édition limitée drop exclusivement pour les fans Magic">Limited edition merch dropped uniquely for Magic fans</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-        </div>
-        <div class="mcol">
-          <div class="mlabel">DEC</div>
-          <div class="jcard teal"><div class="nm">Magic Quest</div><div class="hk" data-en="A premium track where each level unlocks the chance to attend a meet & greet" data-fr="Un parcours premium où chaque niveau débloque la chance d'assister à un meet & greet">A premium track where each level unlocks the chance to attend a meet &amp; greet</div><div class="cds"><div class="rwd"><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;margin-top:24px;">
+      <div class="fbar-row">
+        <div class="fbar-lbl" data-en="Reachable audience<br>socials + ticket buyers" data-fr="Audience accessible<br>socials + acheteurs">Reachable audience<br>socials + ticket buyers</div>
+        <div class="fbar-track" style="height:60px;">
+          <div class="fbar-fill" style="width:100%;background:linear-gradient(90deg,rgba(0,130,255,0.35),rgba(31,206,255,0.2));"></div>
+          <div class="fbar-inner"><span class="fbar-main">5M + tickets</span><span class="fbar-sub" data-en="5M social followers, concert ticket buyers, 4M monthly Spotify" data-fr="5M abonnés sociaux, acheteurs de billets, 4M auditeurs Spotify/mois">5M social followers, concert ticket buyers, 4M monthly Spotify</span><span class="fbar-pct">100%</span></div>
         </div>
       </div>
-      <div class="jleg">
-        <span style="color:rgba(255,255,255,0.35);font-weight:700;letter-spacing:0.1em;" data-en="DRIVES" data-fr="MOTEURS">DRIVES</span>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg> <span data-en="Engagement" data-fr="Engagement">Engagement</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg> <span data-en="Tickets" data-fr="Billets">Tickets</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg> <span data-en="Merch" data-fr="Merch">Merch</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg> <span data-en="Premium" data-fr="Premium">Premium</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg> <span data-en="Streams" data-fr="Streams">Streams</span></div>
+      <div class="fbar-down">&darr;</div>
+      <div class="fbar-row">
+        <div class="fbar-lbl" data-en="Cumulative reach<br>7-month campaign" data-fr="Reach cumulé<br>campagne 7 mois">Cumulative reach<br>7-month campaign</div>
+        <div class="fbar-track">
+          <div class="fbar-fill" style="width:20%;background:rgba(31,206,255,0.15);"></div>
+          <div class="fbar-inner"><span class="fbar-main">~1,000,000</span><span class="fbar-sub" data-en="artist co-posts + paid + ticket emails" data-fr="co-posts artiste + paid + emails billetterie">artist co-posts + paid + ticket emails</span><span class="fbar-pct">~20%</span></div>
+        </div>
+      </div>
+      <div class="fbar-down">&darr;</div>
+      <div class="fbar-row">
+        <div class="fbar-lbl" data-en="Fanverse landing<br>page visits" data-fr="Visites landing<br>page Fanverse">Fanverse landing<br>page visits</div>
+        <div class="fbar-track">
+          <div class="fbar-fill" style="width:10%;background:rgba(31,206,255,0.18);"></div>
+          <div class="fbar-inner"><span class="fbar-main">~150,000</span><span class="fbar-sub" data-en="CTR boosted by ticket-scan + referral" data-fr="CTR boosté par scan billet + referral">CTR boosted by ticket-scan + referral</span><span class="fbar-pct">~15%</span></div>
+        </div>
+      </div>
+      <div class="fbar-down">&darr;</div>
+      <div class="fbar-row">
+        <div class="fbar-lbl" data-en="Activated members<br>by concert night" data-fr="Membres activés<br>au soir du concert">Activated members<br>by concert night</div>
+        <div class="fbar-track" style="border-color:rgba(31,206,255,0.2);">
+          <div class="fbar-fill" style="width:6%;background:rgba(31,206,255,0.25);"></div>
+          <div class="fbar-inner"><span class="fbar-main" style="color:var(--cyan);">20,000 &ndash; 40,000</span><span class="fbar-sub" data-en="13–27% landing→activation (Weverse/Fave benchmarks)" data-fr="13–27% landing→activation (benchmarks Weverse/Fave)">13&ndash;27% landing&rarr;activation (Weverse/Fave benchmarks)</span><span class="fbar-pct">base&rarr;upside</span></div>
+        </div>
+      </div>
+      <div class="fbar-down">&darr;</div>
+      <div class="fbar-row">
+        <div class="fbar-lbl" data-en="Permanent<br>owned fanbase" data-fr="Fanbase<br>permanente">Permanent<br>owned fanbase</div>
+        <div class="fbar-track" style="border-color:rgba(31,206,255,0.4);background:rgba(31,206,255,0.05);">
+          <div class="fbar-inner"><span class="fbar-main" style="background:linear-gradient(135deg,#CC2BFB 0%,#1FCEFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-en="ElGrandeToto&rsquo;s Fanverse" data-fr="Le Fanverse d&rsquo;ElGrandeToto">ElGrandeToto&rsquo;s Fanverse</span><span class="fbar-sub" data-en="identified, engaged, owned. Your asset for every release, tour, brand and label deal." data-fr="identifiée, engagée, possédée. Votre actif pour chaque sortie, tournée, deal marque et label.">identified, engaged, owned. Your asset for every release, tour, brand and label deal.</span></div>
+        </div>
       </div>
     </div>
   </div>
