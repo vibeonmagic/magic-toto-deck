@@ -2058,61 +2058,101 @@ body.present-mode #present-arrows { display:flex !important; }
 <!-- ═══════════════════════════════════════
   S-FUNNEL — ACQUISITION FUNNEL (TOTO)
 ═══════════════════════════════════════ -->
+
+<style>
+#s-applied .ic{width:16px;height:16px;display:inline-block;vertical-align:middle;}
+#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
+#s-applied .pband{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;}
+#s-applied .pseg{border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
+#s-applied .pseg.c{grid-column:span 6;background:rgba(31,206,255,0.1);color:var(--cyan);border:1px solid rgba(31,206,255,0.25);}
+#s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:var(--purp);border:1px solid rgba(204,43,251,0.3);}
+#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
+#s-applied .months{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;align-items:start;}
+#s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
+#s-applied .mlabel{font-family:monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.4);text-align:center;}
+#s-applied .mlabel.bercy{color:var(--purp);}
+#s-applied .j-card{height:94px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 11px;display:flex;flex-direction:column;}
+#s-applied .j-card.cyan{border-top-color:var(--cyan);}
+#s-applied .j-card.purp{border-top-color:var(--purp);}
+#s-applied .j-card.teal{border-top-color:#20D4B8;}
+#s-applied .j-card .nm{font-weight:800;font-size:11.5px;color:#fff;line-height:1.1;}
+#s-applied .j-card .hk{font-size:9.5px;color:rgba(255,255,255,0.5);margin-top:5px;line-height:1.28;flex:1;}
+#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;}
+#s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
+#s-applied .jleg .it{display:flex;align-items:center;gap:6px;}
+</style>
 <div class="slide" id="s-applied">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 14</div>
+  <div class="s-bar"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">05 / 14</div>
 
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:54px 80px 48px;z-index:2;">
+  <div class="pad">
     <div style="flex-shrink:0;">
-      <span class="tag" data-en="Acquisition" data-fr="Acquisition">Acquisition</span>
-      <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:52px;line-height:1;letter-spacing:-0.025em;color:#fff;" data-i18n="html" data-en-html="The <span class='gt-b'>acquisition funnel</span>" data-fr-html="Le <span class='gt-b'>funnel d&rsquo;acquisition</span>">
-        The <span class="gt-b">acquisition funnel</span>
-      </div>
-      <p style="margin-top:10px;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.55);max-width:1000px;" data-en="From total reachable audience to a permanent, owned fanbase, by concert night." data-fr="De l&rsquo;audience accessible totale à une fanbase permanente et possédée, au soir du concert.">From total reachable audience to a permanent, owned fanbase, by concert night.</p>
+      <span class="tag" data-en="The CRM plan" data-fr="Le plan CRM">The CRM plan</span>
+      <div class="h" data-i18n="html" data-en-html="The road to <span class='gt'>Bercy and beyond.</span>" data-fr-html="La route vers <span class='gt'>Bercy, et au-delà.</span>">The road to <span class="gt">Bercy and beyond.</span></div>
+      <p class="sub" data-en="Here's an example of his Fanverse in action, from his first stream to the next tour." data-fr="Voici un exemple de son Fanverse en action, du premier stream à la prochaine tournée.">Here&rsquo;s an example of his Fanverse in action, from his first stream to the next tour.</p>
     </div>
 
-    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;margin-top:24px;">
-      <div class="fbar-row">
-        <div class="fbar-lbl" data-en="Reachable audience<br>socials + ticket buyers" data-fr="Audience accessible<br>socials + acheteurs">Reachable audience<br>socials + ticket buyers</div>
-        <div class="fbar-track" style="height:60px;">
-          <div class="fbar-fill" style="width:100%;background:linear-gradient(90deg,rgba(0,130,255,0.35),rgba(31,206,255,0.2));"></div>
-          <div class="fbar-inner"><span class="fbar-main">5M + tickets</span><span class="fbar-sub" data-en="5M social followers, concert ticket buyers, 4M monthly Spotify" data-fr="5M abonnés sociaux, acheteurs de billets, 4M auditeurs Spotify/mois">5M social followers, concert ticket buyers, 4M monthly Spotify</span><span class="fbar-pct">100%</span></div>
+    <div class="jrny">
+      <div class="pband">
+        <div class="pseg c" data-en="Recruit &amp; warm up · Sept→Feb" data-fr="Recrutement &amp; chauffe · sept→fév">Recruit &amp; warm up &middot; Sept&rarr;Feb</div>
+        <div class="pseg p" data-en="Bercy · Mar" data-fr="Bercy · mars">Bercy &middot; Mar</div>
+        <div class="pseg t" data-en="Beyond Bercy · Apr→" data-fr="Au-delà · avril→">Beyond Bercy &middot; Apr&rarr;</div>
+      </div>
+      <div class="months">
+        <div class="mcol">
+          <div class="mlabel">SEPT</div>
+          <div class="j-card cyan"><div class="nm" data-en="Connect &amp; Climb" data-fr="Connect &amp; Climb">Connect &amp; Climb</div><div class="hk" data-en="Link Spotify, earn coins per stream" data-fr="Connecte Spotify, gagne des coins par écoute">Link Spotify, earn coins per stream</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="City Referrals" data-fr="Parrainage par ville">City Referrals</div><div class="hk" data-en="Invite friends, your city climbs" data-fr="Invite tes amis, ta ville monte">Invite friends, your city climbs</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">OCT</div>
+          <div class="j-card cyan"><div class="nm" data-en="Treasure Hunt" data-fr="Chasse au trésor">Treasure Hunt</div><div class="hk" data-en="Scan QR checkpoints to unlock drops" data-fr="Scanne les QR pour débloquer des drops">Scan QR checkpoints to unlock drops</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">NOV</div>
+          <div class="j-card cyan"><div class="nm" data-en="Taste Match" data-fr="Affinité">Taste Match</div><div class="hk" data-en="Rate his world, get your sync score" data-fr="Note son univers, obtiens ton score d'affinité">Rate his world, get your sync score</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">DEC</div>
+          <div class="j-card cyan"><div class="nm" data-en="Track Bracket" data-fr="Tournoi des titres">Track Bracket</div><div class="hk" data-en="Vote his catalogue to a winner" data-fr="Vote son catalogue vers un gagnant">Vote his catalogue to a winner</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">JAN</div>
+          <div class="j-card cyan"><div class="nm" data-en="Build the Setlist" data-fr="Compose la setlist">Build the Setlist</div><div class="hk" data-en="Vote what he plays at Bercy" data-fr="Vote ce qu'il joue à Bercy">Vote what he plays at Bercy</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">FEB</div>
+          <div class="j-card cyan"><div class="nm" data-en="Golden Ticket" data-fr="Golden Ticket">Golden Ticket</div><div class="hk" data-en="Top fans unlock the ticket presale" data-fr="Les top fans accèdent à la prévente">Top fans unlock the ticket presale</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel bercy">&#9733; MAR</div>
+          <div class="j-card purp"><div class="nm" data-en="Final Countdown" data-fr="Compte à rebours">Final Countdown</div><div class="hk" data-en="Daily drops the week before Bercy" data-fr="Drops quotidiens la semaine d'avant">Daily drops the week before Bercy</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="City Challenge" data-fr="Défi des villes">City Challenge</div><div class="hk" data-en="Group selfie near Bercy wins VIP" data-fr="Un selfie de groupe près de Bercy gagne le VIP">Group selfie near Bercy wins VIP</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Collect at Bercy" data-fr="Retrait à Bercy">Collect at Bercy</div><div class="hk" data-en="Order merch ahead, collect on the night" data-fr="Commande le merch en avance, récupère le soir J">Order merch ahead, collect on the night</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Encore Unlock" data-fr="Encore Unlock">Encore Unlock</div><div class="hk" data-en="Scan your stub, unlock a backstage clip" data-fr="Scanne ton billet, débloque un clip backstage">Scan your stub, unlock a backstage clip</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">APR</div>
+          <div class="j-card teal"><div class="nm" data-en="Backstage Pass" data-fr="Backstage Pass">Backstage Pass</div><div class="hk" data-en="Backstage video on Magic Unlimited" data-fr="Vidéo backstage sur Magic Unlimited">Backstage video on Magic Unlimited</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
+          <div class="j-card teal"><div class="nm" data-en="Merch Drop" data-fr="Merch Drop">Merch Drop</div><div class="hk" data-en="Limited drop, link to checkout" data-fr="Drop limité, lien direct au checkout">Limited drop, link to checkout</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">MAY</div>
+          <div class="j-card teal"><div class="nm" data-en="Next Drop Insider" data-fr="Next Drop Insider">Next Drop Insider</div><div class="hk" data-en="First listen, vote the next tour" data-fr="Premier écoute, vote la prochaine tournée">First listen, vote the next tour</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
         </div>
       </div>
-      <div class="fbar-down">&darr;</div>
-      <div class="fbar-row">
-        <div class="fbar-lbl" data-en="Cumulative reach<br>7-month campaign" data-fr="Reach cumulé<br>campagne 7 mois">Cumulative reach<br>7-month campaign</div>
-        <div class="fbar-track">
-          <div class="fbar-fill" style="width:20%;background:rgba(31,206,255,0.15);"></div>
-          <div class="fbar-inner"><span class="fbar-main">~1,000,000</span><span class="fbar-sub" data-en="artist co-posts + paid + ticket emails" data-fr="co-posts artiste + paid + emails billetterie">artist co-posts + paid + ticket emails</span><span class="fbar-pct">~20%</span></div>
-        </div>
-      </div>
-      <div class="fbar-down">&darr;</div>
-      <div class="fbar-row">
-        <div class="fbar-lbl" data-en="Fanverse landing<br>page visits" data-fr="Visites landing<br>page Fanverse">Fanverse landing<br>page visits</div>
-        <div class="fbar-track">
-          <div class="fbar-fill" style="width:10%;background:rgba(31,206,255,0.18);"></div>
-          <div class="fbar-inner"><span class="fbar-main">~150,000</span><span class="fbar-sub" data-en="CTR boosted by ticket-scan + referral" data-fr="CTR boosté par scan billet + referral">CTR boosted by ticket-scan + referral</span><span class="fbar-pct">~15%</span></div>
-        </div>
-      </div>
-      <div class="fbar-down">&darr;</div>
-      <div class="fbar-row">
-        <div class="fbar-lbl" data-en="Activated members<br>by concert night" data-fr="Membres activés<br>au soir du concert">Activated members<br>by concert night</div>
-        <div class="fbar-track" style="border-color:rgba(31,206,255,0.2);">
-          <div class="fbar-fill" style="width:6%;background:rgba(31,206,255,0.25);"></div>
-          <div class="fbar-inner"><span class="fbar-main" style="color:var(--cyan);">20,000 &ndash; 40,000</span><span class="fbar-sub" data-en="13–27% landing→activation (Weverse/Fave benchmarks)" data-fr="13–27% landing→activation (benchmarks Weverse/Fave)">13&ndash;27% landing&rarr;activation (Weverse/Fave benchmarks)</span><span class="fbar-pct">base&rarr;upside</span></div>
-        </div>
-      </div>
-      <div class="fbar-down">&darr;</div>
-      <div class="fbar-row">
-        <div class="fbar-lbl" data-en="Permanent<br>owned fanbase" data-fr="Fanbase<br>permanente">Permanent<br>owned fanbase</div>
-        <div class="fbar-track" style="border-color:rgba(31,206,255,0.4);background:rgba(31,206,255,0.05);">
-          <div class="fbar-inner"><span class="fbar-main" style="background:linear-gradient(135deg,#CC2BFB 0%,#1FCEFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-en="ElGrandeToto&rsquo;s Fanverse" data-fr="Le Fanverse d&rsquo;ElGrandeToto">ElGrandeToto&rsquo;s Fanverse</span><span class="fbar-sub" data-en="identified, engaged, owned. Your asset for every release, tour, brand and label deal." data-fr="identifiée, engagée, possédée. Votre actif pour chaque sortie, tournée, deal marque et label.">identified, engaged, owned. Your asset for every release, tour, brand and label deal.</span></div>
-        </div>
+      <div class="jleg">
+        <span style="color:rgba(255,255,255,0.35);font-weight:700;letter-spacing:0.1em;" data-en="DRIVES" data-fr="LEVIERS">DRIVES</span>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg> <span data-en="Engagement" data-fr="Engagement">Engagement</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg> <span data-en="Tickets" data-fr="Billets">Tickets</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg> <span data-en="Merch" data-fr="Merch">Merch</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg> <span data-en="Premium" data-fr="Premium">Premium</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg> <span data-en="Streams" data-fr="Streams">Streams</span></div>
       </div>
     </div>
+
   </div>
 </div>
 </div>
