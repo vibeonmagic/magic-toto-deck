@@ -44,12 +44,12 @@
   --cardb: rgba(255,255,255,0.09);
   --cyan:  #1FCEFF;
   --blue:  #0082FF;
-  --purp:  #8C3CFF;
+  --purp:  #CC2BFB;
   --purp2: #6166B2;
   --white: #FFFFFF;
   --muted: rgba(255,255,255,0.5);
   --gp:    linear-gradient(135deg, #0082FF 0%, #1FCEFF 100%);
-  --gpu:   linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  --gpu:   linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   --gwarm: linear-gradient(135deg, #FD3E84 0%, #FFA28D 100%);
 }
 
@@ -101,9 +101,9 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
 
 /* Cover title light ray — text-only shimmer */
 @keyframes heartPulse {
-  0%   { transform:scale(1); filter:drop-shadow(0 0 24px rgba(140,60,255,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
-  50%  { transform:scale(1.08); filter:drop-shadow(0 0 40px rgba(140,60,255,0.4)) drop-shadow(0 0 90px rgba(31,206,255,0.25)); }
-  100% { transform:scale(1); filter:drop-shadow(0 0 24px rgba(140,60,255,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
+  0%   { transform:scale(1); filter:drop-shadow(0 0 24px rgba(204,43,251,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
+  50%  { transform:scale(1.08); filter:drop-shadow(0 0 40px rgba(204,43,251,0.4)) drop-shadow(0 0 90px rgba(31,206,255,0.25)); }
+  100% { transform:scale(1); filter:drop-shadow(0 0 24px rgba(204,43,251,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
 }
 @keyframes heartGlow {
   0%   { opacity:0.4; transform:scale(1); }
@@ -133,8 +133,8 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   50%      { transform:translateX(6px); opacity:1; }
 }
 @keyframes takeawayPulse {
-  0%, 100% { box-shadow:0 4px 50px rgba(31,206,255,0.3),0 0 40px rgba(140,60,255,0.2),0 0 80px rgba(31,206,255,0.1); border-color:rgba(31,206,255,0.4); }
-  50%      { box-shadow:0 4px 100px rgba(31,206,255,0.5),0 0 70px rgba(140,60,255,0.35),0 0 120px rgba(31,206,255,0.15); border-color:rgba(31,206,255,0.6); }
+  0%, 100% { box-shadow:0 4px 50px rgba(31,206,255,0.3),0 0 40px rgba(204,43,251,0.2),0 0 80px rgba(31,206,255,0.1); border-color:rgba(31,206,255,0.4); }
+  50%      { box-shadow:0 4px 100px rgba(31,206,255,0.5),0 0 70px rgba(204,43,251,0.35),0 0 120px rgba(31,206,255,0.15); border-color:rgba(31,206,255,0.6); }
 }
 @keyframes textShimmer {
   0%   { background-position:200% center, 0% center; }
@@ -196,7 +196,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
 .gl-tl { width:700px; height:700px; top:-250px; left:-250px;
   background:radial-gradient(circle, rgba(0,130,255,0.28) 0%, transparent 65%); }
 .gl-br { width:600px; height:600px; bottom:-200px; right:-200px;
-  background:radial-gradient(circle, rgba(140,60,255,0.22) 0%, transparent 65%); }
+  background:radial-gradient(circle, rgba(204,43,251,0.22) 0%, transparent 65%); }
 .gl-tr { width:500px; height:500px; top:-150px; right:-150px;
   background:radial-gradient(circle, rgba(31,206,255,0.18) 0%, transparent 65%); }
 .gl-bl { width:450px; height:450px; bottom:-150px; left:-100px;
@@ -237,7 +237,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   border:1px solid rgba(31,206,255,0.3); color:var(--cyan);
   background:rgba(31,206,255,0.07);
 }
-.tag-pu { border-color:rgba(140,60,255,0.3); color:var(--purp); background:rgba(140,60,255,0.07); }
+.tag-pu { border-color:rgba(204,43,251,0.3); color:var(--purp); background:rgba(204,43,251,0.07); }
 
 .gt { background:var(--gpu); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 .gpu-t { background:var(--gpu); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
@@ -457,7 +457,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   inset:120px 24px 100px;
   border-radius:50%;
   background:
-    radial-gradient(circle, rgba(88,58,255,0.38) 0%, rgba(31,206,255,0.18) 34%, rgba(140,60,255,0.14) 52%, transparent 76%);
+    radial-gradient(circle, rgba(88,58,255,0.38) 0%, rgba(31,206,255,0.18) 34%, rgba(204,43,251,0.14) 52%, transparent 76%);
   filter:blur(16px);
   pointer-events:none;
 }
@@ -628,7 +628,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   height:18px;
   border-radius:10px 10px 10px 3px;
   transform:rotate(45deg);
-  background:linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  background:linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   box-shadow:0 0 14px rgba(103,108,255,0.35);
 }
 
@@ -760,7 +760,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   width:18px;
   height:18px;
   border-radius:50%;
-  background:linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  background:linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   box-shadow:0 0 0 3px rgba(72,56,198,0.9);
 }
 
@@ -1654,8 +1654,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <!-- Magic changes that -->
       <div style="flex:0 0 420px;display:flex;align-items:stretch;justify-content:center;">
         <div class="magic-box" style="position:relative;border-radius:20px;padding:2px;animation:takeawayPulse 3s ease-in-out infinite;display:flex;flex-direction:column;flex:1;">
-          <div style="position:absolute;inset:0;border-radius:20px;border:4px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(140,60,255,0.7),rgba(140,60,255,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
-          <div style="padding:40px 40px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(140,60,255,0.14) 100%);display:flex;align-items:center;justify-content:center;flex:1;;border-radius:18px;text-align:center;position:relative;z-index:3;">
+          <div style="position:absolute;inset:0;border-radius:20px;border:4px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(204,43,251,0.7),rgba(204,43,251,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
+          <div style="padding:40px 40px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(204,43,251,0.14) 100%);display:flex;align-items:center;justify-content:center;flex:1;;border-radius:18px;text-align:center;position:relative;z-index:3;">
             <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:36px;line-height:1.3;" data-i18n="html" data-en-html="Magic<br><span class='gt gt-shimmer'>changes that.</span>" data-fr-html="Magic<br><span class='gt gt-shimmer'>change la donne.</span>">
               Magic<br><span class="gt gt-shimmer">changes that.</span>
             </div>
@@ -1689,7 +1689,7 @@ body.present-mode #present-arrows { display:flex !important; }
     <div style="flex-shrink:0;">
       <span class="tag tag-pu" data-en="Momentum" data-fr="Momentum">Momentum</span>
       <div class="h" data-i18n="html" data-en-html="Make every moment <span class='gt'>bigger.</span>" data-fr-html="Faire de chaque moment <span class='gt'>un événement.</span>">Make every moment <span class="gt">bigger.</span></div>
-      <p class="sub" data-en="Magic turns Bercy and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year." data-fr="Magic transforme Bercy et tout ce qui l'entoure en expériences fans qui génèrent plus de portée, plus de ventes, plus d'engagement. Moins de creux, du momentum toute l'année.">Magic turns Bercy and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year.</p>
+      <p class="sub" data-en="Magic turns Accor and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year." data-fr="Magic transforme Accor et tout ce qui l'entoure en expériences fans qui génèrent plus de portée, plus de ventes, plus d'engagement. Moins de creux, du momentum toute l'année.">Magic turns Accor and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year.</p>
     </div>
     <div class="chartwrap">
       <svg viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none" style="width:100%;height:auto;">
@@ -1704,35 +1704,50 @@ body.present-mode #present-arrows { display:flex !important; }
         <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4 L 1320 210 L 20 210 Z" fill="url(#tlf)" opacity="0.45"/>
         <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4" stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
-          <line x1="70" y1="203" x2="70" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="165" y1="199" x2="165" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="265" y1="195" x2="265" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="365" y1="191" x2="365" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="465" y1="187" x2="465" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="565" y1="182" x2="565" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="665" y1="170" x2="665" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="755" y1="132" x2="755" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="830" y1="86" x2="830" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="895" y1="65" x2="895" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="965" y1="90" x2="965" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="1075" y1="156" x2="1075" y2="234" stroke="rgba(32,212,184,0.3)"/>
-          <line x1="1165" y1="182" x2="1165" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="1265" y1="192" x2="1265" y2="234" stroke="rgba(0,130,255,0.3)"/>
+          <line x1="70" y1="172" x2="70" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="165" y1="165" x2="165" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="265" y1="154" x2="265" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="365" y1="137" x2="365" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="465" y1="115" x2="465" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="565" y1="88" x2="565" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="665" y1="62" x2="665" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="755" y1="43" x2="755" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="830" y1="33" x2="830" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="895" y1="30" x2="895" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="965" y1="33" x2="965" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1075" y1="51" x2="1075" y2="234" stroke="rgba(32,212,184,0.3)"/>
+          <line x1="1165" y1="72" x2="1165" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1265" y1="99" x2="1265" y2="234" stroke="rgba(0,130,255,0.3)"/>
         </g>
-        <circle cx="70" cy="203" r="4.5" fill="#1FCEFF"/>
-        <circle cx="165" cy="199" r="4.5" fill="#FFC832"/>
-        <circle cx="265" cy="195" r="4.5" fill="#1FCEFF"/>
-        <circle cx="365" cy="191" r="4.5" fill="#1FCEFF"/>
-        <circle cx="465" cy="187" r="4.5" fill="#1FCEFF"/>
-        <circle cx="565" cy="182" r="4.5" fill="#1FCEFF"/>
-        <circle cx="665" cy="170" r="5" fill="#FFC832"/>
-        <circle cx="755" cy="132" r="5" fill="#FFC832"/>
-        <circle cx="830" cy="86" r="5" fill="#1FCEFF"/>
-        <circle cx="895" cy="65" r="5.5" fill="#FD3E84"/>
-        <circle cx="965" cy="90" r="5" fill="#FD3E84"/>
-        <circle cx="1075" cy="156" r="5" fill="#20D4B8"/>
-        <circle cx="1165" cy="182" r="4.5" fill="#FD3E84"/>
-        <circle cx="1265" cy="192" r="4.5" fill="#0082FF"/>
+        <circle cx="70" cy="172" r="4.5" fill="#1FCEFF"/>
+        <circle cx="165" cy="165" r="4.5" fill="#FFC832"/>
+        <circle cx="265" cy="154" r="4.5" fill="#1FCEFF"/>
+        <circle cx="365" cy="137" r="4.5" fill="#1FCEFF"/>
+        <circle cx="465" cy="115" r="4.5" fill="#1FCEFF"/>
+        <circle cx="565" cy="88" r="4.5" fill="#1FCEFF"/>
+        <circle cx="665" cy="62" r="5" fill="#FFC832"/>
+        <circle cx="755" cy="43" r="5" fill="#FFC832"/>
+        <circle cx="830" cy="33" r="5" fill="#1FCEFF"/>
+        <circle cx="895" cy="30" r="5.5" fill="#FD3E84"/>
+        <circle cx="965" cy="33" r="5" fill="#FD3E84"/>
+        <circle cx="1075" cy="51" r="5" fill="#20D4B8"/>
+        <circle cx="1165" cy="72" r="4.5" fill="#FD3E84"/>
+        <circle cx="1265" cy="99" r="4.5" fill="#0082FF"/>
+        <text x="70" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Quest</text>
+        <text x="165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Invite Friends</text>
+        <text x="265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Lens</text>
+        <text x="365" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Faves</text>
+        <text x="465" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Talent Faves</text>
+        <text x="565" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Events</text>
+        <text x="665" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Tickets</text>
+        <text x="755" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Mystery Box</text>
+        <text x="830" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Meet</text>
+        <text x="895" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Store</text>
+        <text x="965" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Collectibles</text>
+        <text x="1075" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Unlimited</text>
+        <text x="1165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Merch</text>
+        <text x="1265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Music</text>
+        
         <g transform="translate(0,10)">
           </g>
           </g>
@@ -1759,50 +1774,22 @@ body.present-mode #present-arrows { display:flex !important; }
         <g><circle cx="1075" cy="236" r="13" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1.1"/><svg x="1067" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></g>
         <g><circle cx="1165" cy="236" r="13" fill="rgba(253,62,132,0.16)" stroke="rgba(253,62,132,0.5)" stroke-width="1.1"/><svg x="1157" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></g>
         <g><circle cx="1265" cy="236" r="13" fill="rgba(0,130,255,0.16)" stroke="rgba(0,130,255,0.5)" stroke-width="1.1"/><svg x="1257" y="228" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></g>
-        <text x="70" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic</text>
-          <text x="70" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Quest</text>
-          <text x="165" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Invite</text>
-          <text x="165" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Friends</text>
-          <text x="265" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic</text>
-          <text x="265" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Lens</text>
-          <text x="365" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan</text>
-          <text x="365" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Faves</text>
-          <text x="465" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Talent</text>
-          <text x="465" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Faves</text>
-          <text x="565" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Events</text>
-          <text x="565" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10"></text>
-          <text x="665" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Tickets</text>
-          <text x="665" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10"></text>
-          <text x="755" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Mystery</text>
-          <text x="755" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Box</text>
-          <text x="830" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Fan</text>
-          <text x="830" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Meet</text>
-          <text x="895" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Store</text>
-          <text x="895" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10"></text>
-          <text x="965" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Collec-</text>
-          <text x="965" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">tibles</text>
-          <text x="1075" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic</text>
-          <text x="1075" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Unlimited</text>
-          <text x="1165" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Merch</text>
-          <text x="1165" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"></text>
-          <text x="1265" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Music</text>
-          <text x="1265" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"></text>
         </g>
         <g transform="translate(0,24)">
           <path d="M28,288 L705,288 L714,300 L705,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.4)" stroke-width="0.8"/>
-          <text x="365" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Recruit &amp; warm up · Sept→Feb" data-fr="Recrutement &amp; chauffe · sept→fév">Recruit &amp; warm up · Sept→Feb</tspan></text>
+          <text x="367" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Build-up · Sep - Feb" data-fr="Mise en route · sep - fév">Build-up · Sep - Feb</tspan></text>
           <line x1="714" y1="300" x2="740" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
           <circle cx="727" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
           <path d="M744,288 L1001,288 L1010,300 L1001,312 L744,312 Q740,312,740,308 L740,292 Q740,288,744,288 Z" fill="rgba(204,43,251,0.14)" stroke="rgba(204,43,251,0.45)" stroke-width="0.8"/>
-          <text x="870" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Bercy · Mar" data-fr="Bercy · mars">Bercy · Mar</tspan></text>
+          <text x="872" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Concert night · Mar" data-fr="Le concert · mars">Concert night · Mar</tspan></text>
           <line x1="1010" y1="300" x2="1036" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
           <circle cx="1023" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
           <path d="M1040,288 L1311,288 L1320,300 L1311,312 L1040,312 Q1036,312,1036,308 L1036,292 Q1036,288,1040,288 Z" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="0.8"/>
-          <text x="1174" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Beyond Bercy · Apr→" data-fr="Au-delà · avril→">Beyond Bercy · Apr→</tspan></text>
-          <line x1="1090" y1="343" x2="1122" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
-          <text x="1320" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</tspan></text>
-          <line x1="1090" y1="358" x2="1122" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
-          <text x="1320" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic"><tspan data-en="Traditional engagement" data-fr="Engagement traditionnel">Traditional engagement</tspan></text>
+          <text x="1176" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="After the show · Apr - onwards" data-fr="Après le concert · avril - et après">After the show · Apr - onwards</tspan></text>
+          <line x1="1140" y1="343" x2="1172" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
+          <text x="1182" y="347" text-anchor="start" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</tspan></text>
+          <line x1="1140" y1="358" x2="1172" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+          <text x="1182" y="362" text-anchor="start" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic"><tspan data-en="Traditional engagement" data-fr="Engagement traditionnel">Traditional engagement</tspan></text>
         </g>
       </svg>
     </div>
@@ -1893,8 +1880,8 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="ss-star" style="width:3px;height:3px;top:50%;left:calc(50% - 265px);transform:translate(-50%,-50%);opacity:.65;"></div>
 
         <div class="ss-sun">
-          <span style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:rgba(40,40,40,0.8);letter-spacing:0.08em;" data-en="CÉLINE" data-fr="CÉLINE">CÉLINE</span>
-          <span style="font-family:'Gilroy',sans-serif;font-weight:400;font-size:10px;color:rgba(40,40,40,0.5);letter-spacing:0.12em;" data-en="DION" data-fr="DION">DION</span>
+          <span style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:11px;color:rgba(40,40,40,0.8);letter-spacing:0.08em;" data-en="EL GRANDE" data-fr="EL GRANDE">EL GRANDE</span>
+          <span style="font-family:'Gilroy',sans-serif;font-weight:400;font-size:10px;color:rgba(40,40,40,0.5);letter-spacing:0.12em;" data-en="TOTO" data-fr="TOTO">TOTO</span>
         </div>
 
         <div class="r1" style="--spd:20s;--s:0deg;">
@@ -1911,7 +1898,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-105px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:36px;height:36px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-card"></use></svg></div>
+                <div class="ss-planet" style="width:36px;height:36px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-card"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Fan Card" data-fr="Carte Fan">Fan Card</div>
             </div>
@@ -1952,7 +1939,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-185px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:42px;height:42px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-calendar"></use></svg></div>
+                <div class="ss-planet" style="width:42px;height:42px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-calendar"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Events" data-fr="Événements">Events</div>
             </div>
@@ -1994,7 +1981,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-265px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:48px;height:48px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-xl" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bolt"></use></svg></div>
+                <div class="ss-planet" style="width:48px;height:48px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-xl" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bolt"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Magic Quest" data-fr="Magic Quest">Magic Quest</div>
             </div>
@@ -2025,7 +2012,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-265px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:44px;height:44px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bookmark"></use></svg></div>
+                <div class="ss-planet" style="width:44px;height:44px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bookmark"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Faves" data-fr="Favoris">Faves</div>
             </div>
@@ -2079,7 +2066,7 @@ body.present-mode #present-arrows { display:flex !important; }
         </div>
       </div>
       <!-- Panel 2: Replace #s5-img-gamification contents with <img> -->
-      <div style="flex:1;background:rgba(90,30,140,0.2);border:1px solid rgba(140,60,255,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
+      <div style="flex:1;background:rgba(90,30,140,0.2);border:1px solid rgba(204,43,251,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
         <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;background:var(--gpu);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.08em;text-transform:uppercase;" data-en="Gamification" data-fr="Gamification">Gamification</div>
         <div id="s5-img-gamification" style="flex:1;border-radius:12px;overflow:hidden;">
           <img src="Assets/Deck Edits/Game Page ElGrandeToto.png" alt="Gamification" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
@@ -2104,94 +2091,92 @@ body.present-mode #present-arrows { display:flex !important; }
 </div>
 </div>
 <style>
-#s-applied .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
+#s-applied .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 72px;z-index:2;}
 #s-applied .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
 #s-applied .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:1040px;line-height:1.65;}
 #s-applied .ic{width:16px;height:16px;display:inline-block;vertical-align:middle;}
-#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
+#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:12px;margin-top:20px;}
 #s-applied .pband{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;}
-#s-applied .pseg{border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
-#s-applied .pseg.c{grid-column:span 6;background:rgba(31,206,255,0.1);color:var(--cyan);border:1px solid rgba(31,206,255,0.25);}
-#s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:var(--purp);border:1px solid rgba(204,43,251,0.3);}
-#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
+#s-applied .pseg{font-family:'Gilroy',sans-serif;padding:9px 22px 9px 12px;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;clip-path:polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);}
+#s-applied .pseg.c{grid-column:span 6;background:rgba(31,206,255,0.14);color:var(--cyan);}
+#s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.18);color:var(--purp);}
+#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.14);color:#20D4B8;}
 #s-applied .months{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;align-items:start;}
 #s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
-#s-applied .mlabel{font-family:monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.4);text-align:center;}
+#s-applied .mlabel{font-family:'Gilroy',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.45);text-align:center;text-transform:uppercase;}
 #s-applied .mlabel.bercy{color:var(--purp);}
-#s-applied .j-card{height:94px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 11px;display:flex;flex-direction:column;}
+#s-applied .j-card{min-height:108px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:12px 12px;display:flex;flex-direction:column;}
 #s-applied .j-card.cyan{border-top-color:var(--cyan);}
 #s-applied .j-card.purp{border-top-color:var(--purp);}
 #s-applied .j-card.teal{border-top-color:#20D4B8;}
-#s-applied .j-card .nm{font-weight:800;font-size:11.5px;color:#fff;line-height:1.1;}
-#s-applied .j-card .hk{font-size:9.5px;color:rgba(255,255,255,0.5);margin-top:5px;line-height:1.28;flex:1;}
-#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;}
-#s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
-#s-applied .jleg .it{display:flex;align-items:center;gap:6px;}
-</style>
+#s-applied .j-card .nm{font-family:'Gilroy',sans-serif;font-weight:800;font-size:13.5px;color:#fff;line-height:1.15;}
+#s-applied .j-card .hk{font-family:'Gilroy',sans-serif;font-size:11.5px;color:rgba(255,255,255,0.6);margin-top:5px;line-height:1.3;flex:1;}
+#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;margin-top:6px;}
+#s-applied .jleg{position:absolute;left:72px;bottom:24px;display:inline-flex;gap:16px;align-items:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.65);padding:8px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;z-index:3;}
+#s-applied .jleg .it{display:flex;align-items:center;gap:7px;}</style>
 <div class="slide" id="s-applied">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">05 / 14</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">07 / 12</div>
 
   <div class="pad">
     <div style="flex-shrink:0;">
       <span class="tag" data-en="The CRM plan" data-fr="Le plan CRM">The CRM plan</span>
-      <div class="h" data-i18n="html" data-en-html="The road to <span class='gt'>Bercy and beyond.</span>" data-fr-html="La route vers <span class='gt'>Bercy, et au-delà.</span>">The road to <span class="gt">Bercy and beyond.</span></div>
-      <p class="sub" data-en="Here's an example of his Fanverse in action, from his first stream to the next tour." data-fr="Voici un exemple de son Fanverse en action, du premier stream à la prochaine tournée.">Here&rsquo;s an example of his Fanverse in action, from his first stream to the next tour.</p>
+      <div class="h" data-i18n="html" data-en-html="The road to <span class='gt'>Accor and beyond.</span>" data-fr-html="La route vers <span class='gt'>Accor, et au-delà.</span>">The road to <span class="gt">Accor and beyond.</span></div>
+      <p class="sub" data-en="Here's an example of ElGrandeToto's Fanverse in action, from his first stream to the next tour." data-fr="Voici un exemple du Fanverse d'ElGrandeToto en action, du premier stream à la prochaine tournée.">Here&rsquo;s an example of ElGrandeToto&rsquo;s Fanverse in action, from his first stream to the next tour.</p>
     </div>
 
     <div class="jrny">
       <div class="pband">
-        <div class="pseg c" data-en="Recruit &amp; warm up · Sept→Feb" data-fr="Recrutement &amp; chauffe · sept→fév">Recruit &amp; warm up &middot; Sept&rarr;Feb</div>
-        <div class="pseg p" data-en="Bercy · Mar" data-fr="Bercy · mars">Bercy &middot; Mar</div>
-        <div class="pseg t" data-en="Beyond Bercy · Apr→" data-fr="Au-delà · avril→">Beyond Bercy &middot; Apr&rarr;</div>
+        <div class="pseg c" data-en="Build-up · Sep - Feb" data-fr="Mise en route · sep - fév">Build-up &middot; Sep - Feb</div>
+        <div class="pseg p" data-en="Concert · Mar" data-fr="Le concert · mars">Concert &middot; Mar</div>
+        <div class="pseg t" data-en="After the show · Apr - onwards" data-fr="Après le concert · avril - et après">After the show &middot; Apr - onwards</div>
       </div>
       <div class="months">
         <div class="mcol">
           <div class="mlabel">SEPT</div>
-          <div class="j-card cyan"><div class="nm" data-en="Connect &amp; Climb" data-fr="Connect &amp; Climb">Connect &amp; Climb</div><div class="hk" data-en="Link Spotify, earn coins per stream" data-fr="Connecte Spotify, gagne des coins par écoute">Link Spotify, earn coins per stream</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="j-card cyan"><div class="nm" data-en="City Referrals" data-fr="Parrainage par ville">City Referrals</div><div class="hk" data-en="Invite friends, your city climbs" data-fr="Invite tes amis, ta ville monte">Invite friends, your city climbs</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Connect &amp; climb" data-fr="Connect &amp; climb">Connect &amp; climb</div><div class="hk" data-en="Link Spotify, earn coins per stream" data-fr="Connecte Spotify, gagne des coins par écoute">Link Spotify, earn coins per stream</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="City referrals" data-fr="Parrainage par ville">City referrals</div><div class="hk" data-en="Refer a friend, earn coins when they join" data-fr="Parraine un ami, gagne des coins quand il rejoint">Refer a friend, earn coins when they join</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">OCT</div>
-          <div class="j-card cyan"><div class="nm" data-en="Treasure Hunt" data-fr="Chasse au trésor">Treasure Hunt</div><div class="hk" data-en="Scan QR checkpoints to unlock drops" data-fr="Scanne les QR pour débloquer des drops">Scan QR checkpoints to unlock drops</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Treasure hunt" data-fr="Chasse au trésor">Treasure hunt</div><div class="hk" data-en="Scan QR checkpoints to unlock drops" data-fr="Scanne les QR pour débloquer des drops">Scan QR checkpoints to unlock drops</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">NOV</div>
-          <div class="j-card cyan"><div class="nm" data-en="Taste Match" data-fr="Affinité">Taste Match</div><div class="hk" data-en="Rate his world, get your sync score" data-fr="Note son univers, obtiens ton score d'affinité">Rate his world, get your sync score</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Taste match" data-fr="Affinité">Taste match</div><div class="hk" data-en="Rate his world, get your sync score" data-fr="Note son univers, obtiens ton score d'affinité">Rate his world, get your sync score</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">DEC</div>
-          <div class="j-card cyan"><div class="nm" data-en="Track Bracket" data-fr="Tournoi des titres">Track Bracket</div><div class="hk" data-en="Vote his catalogue to a winner" data-fr="Vote son catalogue vers un gagnant">Vote his catalogue to a winner</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Track bracket" data-fr="Tournoi des titres">Track bracket</div><div class="hk" data-en="Vote his tracks head-to-head, your pick wins" data-fr="Vote ses titres en duel, ton favori gagne">Vote his tracks head-to-head, your pick wins</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">JAN</div>
-          <div class="j-card cyan"><div class="nm" data-en="Build the Setlist" data-fr="Compose la setlist">Build the Setlist</div><div class="hk" data-en="Vote what he plays at Bercy" data-fr="Vote ce qu'il joue à Bercy">Vote what he plays at Bercy</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Build the setlist" data-fr="Compose la setlist">Build the setlist</div><div class="hk" data-en="Vote what he plays at Accor" data-fr="Vote ce qu'il joue à Accor">Vote what he plays at Accor</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">FEB</div>
-          <div class="j-card cyan"><div class="nm" data-en="Golden Ticket" data-fr="Golden Ticket">Golden Ticket</div><div class="hk" data-en="Top fans unlock the ticket presale" data-fr="Les top fans accèdent à la prévente">Top fans unlock the ticket presale</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Golden ticket" data-fr="Golden ticket">Golden ticket</div><div class="hk" data-en="Top fans unlock the ticket presale" data-fr="Les top fans accèdent à la prévente">Top fans unlock the ticket presale</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel bercy">&#9733; MAR</div>
-          <div class="j-card purp"><div class="nm" data-en="Final Countdown" data-fr="Compte à rebours">Final Countdown</div><div class="hk" data-en="Daily drops the week before Bercy" data-fr="Drops quotidiens la semaine d'avant">Daily drops the week before Bercy</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
-          <div class="j-card purp"><div class="nm" data-en="City Challenge" data-fr="Défi des villes">City Challenge</div><div class="hk" data-en="Group selfie near Bercy wins VIP" data-fr="Un selfie de groupe près de Bercy gagne le VIP">Group selfie near Bercy wins VIP</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="j-card purp"><div class="nm" data-en="Collect at Bercy" data-fr="Retrait à Bercy">Collect at Bercy</div><div class="hk" data-en="Order merch ahead, collect on the night" data-fr="Commande le merch en avance, récupère le soir J">Order merch ahead, collect on the night</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-          <div class="j-card purp"><div class="nm" data-en="Encore Unlock" data-fr="Encore Unlock">Encore Unlock</div><div class="hk" data-en="Scan your stub, unlock a backstage clip" data-fr="Scanne ton billet, débloque un clip backstage">Scan your stub, unlock a backstage clip</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Final countdown" data-fr="Compte à rebours">Final countdown</div><div class="hk" data-en="Daily drops the week before Accor" data-fr="Drops quotidiens la semaine d'avant">Daily drops the week before Accor</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="City challenge" data-fr="Défi des villes">City challenge</div><div class="hk" data-en="Group selfie near Accor wins VIP" data-fr="Un selfie de groupe près de Accor gagne le VIP">Group selfie near Accor wins VIP</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Collect at Accor" data-fr="Retrait à Accor">Collect at Accor</div><div class="hk" data-en="Order merch ahead, collect on the night" data-fr="Commande le merch en avance, récupère le soir J">Order merch ahead, collect on the night</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Encore unlock" data-fr="Encore unlock">Encore unlock</div><div class="hk" data-en="Scan your stub, unlock a backstage clip" data-fr="Scanne ton billet, débloque un clip backstage">Scan your stub, unlock a backstage clip</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">APR</div>
-          <div class="j-card teal"><div class="nm" data-en="Backstage Pass" data-fr="Backstage Pass">Backstage Pass</div><div class="hk" data-en="Backstage video on Magic Unlimited" data-fr="Vidéo backstage sur Magic Unlimited">Backstage video on Magic Unlimited</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
-          <div class="j-card teal"><div class="nm" data-en="Merch Drop" data-fr="Merch Drop">Merch Drop</div><div class="hk" data-en="Limited drop, link to checkout" data-fr="Drop limité, lien direct au checkout">Limited drop, link to checkout</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card teal"><div class="nm" data-en="Backstage pass" data-fr="Backstage pass">Backstage pass</div><div class="hk" data-en="Backstage video on Magic Unlimited" data-fr="Vidéo backstage sur Magic Unlimited">Backstage video on Magic Unlimited</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
+          <div class="j-card teal"><div class="nm" data-en="Merch drop" data-fr="Merch drop">Merch drop</div><div class="hk" data-en="Limited drop, link to checkout" data-fr="Drop limité, lien direct au checkout">Limited drop, link to checkout</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">MAY</div>
-          <div class="j-card teal"><div class="nm" data-en="Next Drop Insider" data-fr="Next Drop Insider">Next Drop Insider</div><div class="hk" data-en="First listen, vote the next tour" data-fr="Premier écoute, vote la prochaine tournée">First listen, vote the next tour</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
+          <div class="j-card teal"><div class="nm" data-en="Next drop insider" data-fr="Next drop insider">Next drop insider</div><div class="hk" data-en="First listen on every new release" data-fr="Premier écoute à chaque nouvelle sortie">First listen on every new release</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
         </div>
       </div>
       <div class="jleg">
-        <span style="color:rgba(255,255,255,0.35);font-weight:700;letter-spacing:0.1em;" data-en="DRIVES" data-fr="LEVIERS">DRIVES</span>
         <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg> <span data-en="Engagement" data-fr="Engagement">Engagement</span></div>
         <div class="it"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg> <span data-en="Tickets" data-fr="Billets">Tickets</span></div>
         <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg> <span data-en="Merch" data-fr="Merch">Merch</span></div>
@@ -2203,31 +2188,6 @@ body.present-mode #present-arrows { display:flex !important; }
   </div>
 </div>
 </div>
-
-
-<!-- ═══════════════════════════════════════
-  S-EXPERIENCES — THREE KEY EXPERIENCES FOR ARTISTS
-═══════════════════════════════════════ -->
-<style>
-#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
-#s-applied .pband{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;}
-#s-applied .pseg{border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
-#s-applied .pseg.c{grid-column:span 6;background:rgba(31,206,255,0.1);color:var(--cyan);border:1px solid rgba(31,206,255,0.25);}
-#s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:var(--purp);border:1px solid rgba(204,43,251,0.3);}
-#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
-#s-applied .months{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;align-items:start;}
-#s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
-#s-applied .mlabel{font-family:monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.4);text-align:center;}
-#s-applied .mlabel.bercy{color:var(--purp);}
-#s-applied .j-card{height:94px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 11px;display:flex;flex-direction:column;}
-#s-applied .j-card.cyan{border-top-color:var(--cyan);}
-#s-applied .j-card.purp{border-top-color:var(--purp);}
-#s-applied .j-card.teal{border-top-color:#20D4B8;}
-#s-applied .j-card .nm{font-weight:800;font-size:11.5px;color:#fff;line-height:1.1;}
-#s-applied .j-card .hk{font-size:9.5px;color:rgba(255,255,255,0.5);margin-top:5px;line-height:1.28;flex:1;}
-#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;}
-#s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
-#s-applied .jleg .it{display:flex;align-items:center;gap:6px;}</style>
 
 
 <!-- ═══════════════════════════════════════
@@ -2254,7 +2214,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Mood Dashboard</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: see how your audience feels right now</span>" data-fr-html="<span style='font-weight:700;'>Tableau de bord d'humeur</span><span style='font-weight:300;color:var(--muted);'> : voyez comment vos fans se sentent en ce moment</span>"><span style="font-weight:700;">Mood Dashboard</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: see how your audience feels right now</span></div>
         </div>
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#8C3CFF;flex-shrink:0;"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:#CC2BFB;flex-shrink:0;"></div>
           <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Discovery Map</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: know who your superfans are, not just your followers</span>" data-fr-html="<span style='font-weight:700;'>Carte de découverte</span><span style='font-weight:300;color:var(--muted);'> : comprenez qui sont vraiment vos fans</span>"><span style="font-weight:700;">Discovery Map</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: know who your superfans are, not just your followers</span></div>
         </div>
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
@@ -2523,7 +2483,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>A place for every fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: the arena holds 480,000. Magic opens a space for them, and for the ones who couldn't be there too.</span>" data-fr-html="<span style='font-weight:700;'>Une place pour chaque fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : la salle va accueillir pendant 16 soirs 480 000 fans. Magic leur ouvre un espace, ainsi qu'à ceux qui n'ont pas pu en être.</span>"><span style="font-weight:700;">A place for every fan</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: the arena holds 480,000. Magic opens a space for them, and for the ones who couldn't be there too.</span></div>
       </div>
       <div style="display:flex;align-items:center;gap:16px;padding:18px 24px;border-radius:14px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);text-align:left;">
-        <div style="width:46px;height:46px;border-radius:12px;background:rgba(140,60,255,0.15);border:1px solid rgba(140,60,255,0.32);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(140,60,255,0.15);flex-shrink:0;">
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(204,43,251,0.15);border:1px solid rgba(204,43,251,0.32);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(204,43,251,0.15);flex-shrink:0;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="10" y="7" width="4" height="14" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="rgba(220,100,255,0.9)"/></svg>
         </div>
         <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every moment shared</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside ElGrandeToto, ticket or not.</span>" data-fr-html="<span style='font-weight:700;'>Chaque moment est partagé</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : des moments imaginés avant les concerts au dernier rappel puis aux mois qui suivent, chaque fan vit un instant unique avec ElGrandeToto, avec ou sans billet.</span>"><span style="font-weight:700;">Every moment shared</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside ElGrandeToto, ticket or not.</span></div>
