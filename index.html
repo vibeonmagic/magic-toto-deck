@@ -2091,11 +2091,11 @@ body.present-mode #present-arrows { display:flex !important; }
 </div>
 </div>
 <style>
-#s-applied .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 72px;z-index:2;}
+#s-applied .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 56px;z-index:2;}
 #s-applied .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
 #s-applied .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:1040px;line-height:1.65;}
 #s-applied .ic{width:16px;height:16px;display:inline-block;vertical-align:middle;}
-#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:12px;margin-top:20px;}
+#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:12px;margin-top:32px;}
 #s-applied .pband{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;}
 #s-applied .pseg{font-family:'Gilroy',sans-serif;padding:9px 22px 9px 12px;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;clip-path:polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);}
 #s-applied .pseg.c{grid-column:span 4;background:rgba(31,206,255,0.14);color:var(--cyan);}
@@ -2104,7 +2104,7 @@ body.present-mode #present-arrows { display:flex !important; }
 #s-applied .months{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;align-items:start;}
 #s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
 #s-applied .mlabel{display:none;}
-#s-applied .j-card{min-height:118px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:13px 14px;display:flex;flex-direction:column;}
+#s-applied .j-card{min-height:130px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:18px 14px 13px;display:flex;flex-direction:column;}
 #s-applied .j-card.cyan{border-top-color:var(--cyan);}
 #s-applied .j-card.purp{border-top-color:var(--purp);}
 #s-applied .j-card.teal{border-top-color:#20D4B8;}
@@ -2116,7 +2116,7 @@ body.present-mode #present-arrows { display:flex !important; }
 #s-applied .j-card .coinic{width:13px;height:13px;display:inline-block;}
 #s-applied .j-card .xp{font-family:'Gilroy',sans-serif;font-size:8px;font-weight:800;letter-spacing:0.03em;color:#fff;background:var(--purp);border-radius:4px;padding:1px 4px;line-height:1.4;}
 #s-applied .j-card .nm{padding-right:32px;}
-#s-applied .jleg{position:absolute;left:72px;bottom:24px;display:inline-flex;gap:16px;align-items:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.65);padding:8px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;z-index:3;}
+#s-applied .jleg{position:absolute;left:72px;bottom:44px;display:inline-flex;gap:16px;align-items:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.65);padding:8px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;z-index:3;}
 #s-applied .jleg .it{display:flex;align-items:center;gap:7px;}</style>
 <div class="slide" id="s-applied">
 <div class="si" style="background:#0D1B42">
@@ -2146,7 +2146,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="mcol">
           <div class="mlabel">OCT/NOV</div>
           <div class="j-card cyan"><div class="nm" data-en="Casa hunt" data-fr="Casa hunt">Casa hunt</div><div class="hk" data-en="Scan QR checkpoints to unlock drops" data-fr="Scanne les QR pour débloquer des drops">Scan QR checkpoints to unlock drops</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="j-card cyan"><div class="nm" data-en="Match the beat game" data-fr="Match the beat game">Match the beat game</div><div class="hk" data-en="Rate his world, get your sync score" data-fr="Note son univers, obtiens ton score d'affinité">Rate his world, get your sync score</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Match the beat" data-fr="Match the beat">Match the beat</div><div class="hk" data-en="Tap along with his song to test your skills" data-fr="Tape en rythme avec son morceau pour tester ton skill">Tap along with his song to test your skills</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
           <div class="mlabel">DEC</div>
